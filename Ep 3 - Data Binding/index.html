@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Data & Methods</title>
+</head>
+
+<body>
+    <div id="element">
+        <h1>{{sayHello}}</h1>
+        <h3>{{greet('Night')}}</h3>        <!-- Parameters in the method must use quotation to be string -->
+        <p>My name is {{name}}</p>
+        <p>You can call me {{nick}}</p>
+        <p>And I'm a {{job}}</p>
+        <p>You can look My blog in <a v-bind:href="url">Here</a></p>    <!-- v-bind ~> used for binding the attribute -->
+        <p v-html="insta"></p>
+        <p>
+            Name : <input type="text" v-bind:value="name">
+        </p>
+        <p>
+            Nick : <input type="text" v-bind:value="nick">
+        </p>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
