@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Vue Events</title>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>Events</h1>
+        <!-- ~~~ using operators ~~~ -->
+        <!-- <button @click="age++">Add a Year</button>       -->
+        <!-- <button @click="age--">Substract a Year</button> -->
+        <!-- <p>My age is {{age}}</p> -->
+        <!-- ~~~ End ~~~ -->
+
+        <!-- ~~~ using methods ~~~ -->
+        <button @click="add(1)">Add a Year</button>                <!-- You can change "v-on:" to "@" -->
+        <button @click="sub(1)">Substract a Year</button>
+        <button @dblclick="add(5)">Add 5 Years</button>
+        <button @dblclick="sub(5)">Substract 5 Years</button>
+        <p>My age is {{years}}</p>
+        <!-- ~~~ End ~~~ -->
+
+        <div id="canvas" @mousemove="updateXY">{{x}}, {{y}}</div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
