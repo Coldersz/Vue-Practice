@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Key Events</title>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>Keyboard Events</h1>
+        <label for="">Name: </label>
+        <input type="text" @keyup.enter="logName" id="">
+        <!-- these are kinds of key codes: enter, tab, delete, esc, space, up, down, left, right -->
+        <label for="">Age: </label>
+        <input type="text" @keyup.enter="logAge" id="">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
